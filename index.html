@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<style>
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgb(51, 91, 24);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.log,
+.register {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(./images/4893798.webp);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.log{
+    height: fit-content;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form table {
+    width: 100%;
+}
+
+form table td {
+    padding: 10px 0;
+    
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 8px 12px;;
+    
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form a {
+    color: white;
+    text-decoration: none;
+}
+
+form input[type="reset"] {
+    padding: 8px 12px;
+    border: 1px solid #dc3545;
+    background-color: #ffffff;
+    color: #dc3545;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="reset"]:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+</style>
+<body>
+    <body>
+        <div class="container">
+            <div class="log">
+                <h2>Login Form</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset"></td>
+                            <td><button><a href="nav.html" target="_blank">Login</a></button></td>
+                        </tr>
+                
+                        </tr>
+                    </table>
+                </form>
+            </div>
+    
+            <div class="register">
+                <h2>Registration Form</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset"></td>
+                            <td><button><a href="nav.html" target="_blank">Register</a></button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+    </body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <script src="https://kit.fontawesome.com/f62ea421e2.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'popins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: rgb(0, 0, 0);
+        color: #ffff;
+    }
+
+    h1,
+    li,
+    ul {
+        display: inline;
+
+    }
+
+    nav {
+        position: fixed;
+        bottom: 10px;
+        left: 110px;
+        width: 85.5%;
+        padding: 10px;
+        padding-top: 20px;
+        background-color: rgb(172, 160, 160);
+        height: 75px;
+        color: black;
+        border-radius: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    li,
+    ul {
+        margin: 20px;
+    }
+
+    h1 {
+        margin-left: 50px;
+    }
+
+    ul {
+        margin-left: 58%;
+    }
+
+    li {
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: white;
+
+    }
+
+    input {
+        width: 85%;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 15px;
+
+    }
+
+    .search {
+        text-align: center;
+    }
+
+    #portfolio {
+        padding: 50px 0;
+
+    }
+
+    .container {
+        padding: 10px 10%;
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+
+    .work {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .work img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+    }
+
+    .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), #003e95);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 14px;
+        transition: height 0.5s;
+    }
+
+    .layer h3 {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .layer a {
+        margin-top: 20px;
+        color: #ff004f;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 60px;
+        background: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .work:hover img {
+        transform: scale(1.1);
+    }
+
+    .work:hover .layer {
+        height: 100%;
+    }
+
+    .btn {
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #ff004f;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.5s;
+    }
+
+    .btn:hover {
+        background: #ff004f;
+    }
+</style>
+
+</html>
+<div class="search">
+    <input type="text" placeholder="Search">
+
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>flask-based-User-authentication</h3>
+                    <p>Web application with Flask and MySQL enabling secure user registration, authentication, and
+                        seamless data management, integrating front-end and back-end flawlessly.</p>
+                    <a href="https://github.com/Manikandan306/flask-based-User-authentication.git" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Dynamic Registration Form!</h3>
+                    <p>Dynamic single-page form with smooth CSS transitions for sign-up/login, responsive design, and
+                        user-friendly, reload-free interaction.</p>
+                    <a href="https://lnkd.in/ggNUt_iV" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Responsive Design Website</h3>
+                    <p>Responsive website with a modern dark theme, adaptable to any device, featuring interactive
+                        navigation and enhanced user experience.</p>
+                    <a href="https://lnkd.in/gzPeTuyb" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Try Rcb Fan's Quiz!</h3>
+                    <p>RCB quiz in Spark AR with 10 questions, where users answer by turning their head (right for yes,
+                        left for no), displaying a final score out of 10.</p>
+                    <a href="https://www.instagram.com/ar/2265609947142370/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>AR Heart Collector Game Developed with Spark AR Studio</h3>
+                    <p>Interactive AR Heart Collector game built with Spark AR Studio: control a bucket with head
+                        movements to catch falling hearts, featuring score counter, lives system, and customizable heart
+                        colors.</p>
+                    <a href="https://www.instagram.com/ar/437753532141909/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.jpg">
+                <div class="layer">
+                    <h3>Interactive Virat Kohli Insta Profile Card</h3>
+                    <p>Interactive profile card project with multi-view functionality: introduction, detailed profile,
+                        and compact modes, featuring smooth transitions, responsive design, and social media-inspired
+                        elements.</p>
+                    <a href="https://lnkd.in/giqHkYsM" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="https://github.com/Manikandan306?tab=repositories" target="_blank" class="btn">See More</a>
+    </div>
+</div>
+<nav>
+    <h1>Contact</h1>
+    <ul>
+        <li><a href="https://wa.me/9345316584?text=Hey Buddy, How you doing?" target="_blank">Whatsapp</a></li>
+        <li><a href="https://www.linkedin.com/in/thenmozhi0505/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/thenmozhi0505" target="_blank">Github</a></li>
+    </ul>
+</nav>
